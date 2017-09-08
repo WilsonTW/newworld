@@ -18,32 +18,32 @@ void LightEssence::transform(bool enabled)
 
 void LightEssence::setLifeTime(float lifetime)
 {
-
+    m_lifetime = lifetime;
 }
 
 void LightEssence::setHealth(float health)
 {
-
+    m_health = health;
 }
 
 void LightEssence::setAware(float aware)
 {
-
+    m_aware = aware;
 }
 
 void LightEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void LightEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void LightEssence::setFaQuantity(float faQuantity)
 {
-
+    m_faQuantity = faQuantity;
 }
 
 float LightEssence::getLifeTime()
@@ -104,32 +104,32 @@ void SoundEssence::transform(bool enabled)
 
 void SoundEssence::setLifeTime(float lifetime)
 {
-
+    m_lifetime = lifetime;
 }
 
 void SoundEssence::setHealth(float health)
 {
-
+    m_health = health;
 }
 
 void SoundEssence::setAware(float aware)
 {
-
+    m_aware = aware;
 }
 
 void SoundEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void SoundEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void SoundEssence::setFaQuantity(float faQuantity)
 {
-
+    m_faQuantity = faQuantity;
 }
 
 float SoundEssence::getLifeTime()
@@ -190,32 +190,32 @@ void OdorEssence::transform(bool enabled)
 
 void OdorEssence::setLifeTime(float lifetime)
 {
-
+    m_lifetime = lifetime;
 }
 
 void OdorEssence::setHealth(float health)
 {
-
+    m_health = health;
 }
 
 void OdorEssence::setAware(float aware)
 {
-
+    m_aware = aware;
 }
 
 void OdorEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void OdorEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void OdorEssence::setFaQuantity(float faQuantity)
 {
-
+    m_faQuantity = faQuantity;
 }
 
 float OdorEssence::getLifeTime()
@@ -276,32 +276,32 @@ void TasteEssence::transform(bool enabled)
 
 void TasteEssence::setLifeTime(float lifetime)
 {
-
+    m_lifetime = lifetime;
 }
 
 void TasteEssence::setHealth(float health)
 {
-
+    m_health = health;
 }
 
 void TasteEssence::setAware(float aware)
 {
-
+    m_aware = aware;
 }
 
 void TasteEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void TasteEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void TasteEssence::setFaQuantity(float faQuantity)
 {
-
+    m_faQuantity = faQuantity;
 }
 
 float TasteEssence::getLifeTime()
@@ -362,32 +362,32 @@ void TouchEssence::transform(bool enabled)
 
 void TouchEssence::setLifeTime(float lifetime)
 {
-
+    m_lifetime = lifetime;
 }
 
 void TouchEssence::setHealth(float health)
 {
-
+    m_health = health;
 }
 
 void TouchEssence::setAware(float aware)
 {
-
+    m_aware = aware;
 }
 
 void TouchEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void TouchEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void TouchEssence::setFaQuantity(float faQuantity)
 {
-
+    m_faQuantity = faQuantity;
 }
 
 float TouchEssence::getLifeTime()
@@ -448,32 +448,32 @@ void ThoughtEssence::transform(bool enabled)
 
 void ThoughtEssence::setLifeTime(float lifetime)
 {
-
+    m_lifetime = lifetime;
 }
 
 void ThoughtEssence::setHealth(float health)
 {
-
+    m_health = health;
 }
 
 void ThoughtEssence::setAware(float aware)
 {
-
+    m_aware = aware;
 }
 
 void ThoughtEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void ThoughtEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void ThoughtEssence::setFaQuantity(float faQuantity)
 {
-
+    m_faQuantity = faQuantity;
 }
 
 float ThoughtEssence::getLifeTime()
@@ -559,17 +559,62 @@ void AwareEssence::transform(bool enabled)
 
 void AwareEssence::setFaEnabled(bool faEnabled)
 {
-
+    m_faEnabled = faEnabled;
 }
 
 void AwareEssence::setFaQuality(float faQuality)
 {
-
+    m_faQuality = faQuality;
 }
 
 void AwareEssence::setFaQuantity(float faQuantity)
 {
+    m_faQuantity = faQuantity;
+}
 
+void AwareEssence::setAware(float aware)
+{
+    m_aware = aware;
+}
+
+void AwareEssence::setTargetX(float targetX)
+{
+    m_target_x = targetX;
+}
+
+void AwareEssence::setTargetY(float targetY)
+{
+    m_target_y = targetY;
+}
+
+void AwareEssence::setTargetZ(float targetZ)
+{
+    m_target_z = targetZ;
+}
+
+void AwareEssence::setTargetTime(float targetTime)
+{
+    m_target_time = targetTime;
+}
+
+void AwareEssence::setCurrentX(float currentX)
+{
+    m_current_x = currentX;
+}
+
+void AwareEssence::setCurrentY(float currentY)
+{
+    m_current_y = currentY;
+}
+
+void AwareEssence::setCurrentZ(float currentZ)
+{
+    m_current_z = currentZ;
+}
+
+void AwareEssence::setCurrentTime(float currentTime)
+{
+    m_current_time = currentTime;
 }
 
 bool AwareEssence::getFaEnabled()
@@ -587,6 +632,50 @@ float AwareEssence::getFaQuantity()
     return m_faQuantity;
 }
 
+float AwareEssence::getAware()
+{
+    return m_aware;
+}
+
+float AwareEssence::getTargetX()
+{
+    return m_target_x;
+}
+
+float AwareEssence::getTargetY()
+{
+    return m_target_y;
+}
+
+float AwareEssence::getTargetZ()
+{
+    return m_target_z;
+}
+
+float AwareEssence::getTargetTime()
+{
+    return m_target_time;
+}
+
+float AwareEssence::getCurrentX()
+{
+    return m_current_x;
+}
+
+float AwareEssence::getCurrentY()
+{
+    return m_current_y;
+}
+
+float AwareEssence::getCurrentZ()
+{
+    return m_current_z;
+}
+
+float AwareEssence::getCurrentTime()
+{
+    return m_current_time;
+}
 
 void AwareEssence::acceptAware(bool enabled, float diversity, float quality, float quantity)
 {
@@ -622,3 +711,25 @@ void AwareEssence::acceptThoughtFa(bool enabled, float quality, float quantity)
 {
 
 }
+
+void AwareEssence::acceptPositionMoving(float x, float y, float z, float speed)
+{
+
+}
+
+void AwareEssence::acceptTimeMoving(float time, float speed)
+{
+
+}
+/*
+//Human Area
+Human::Human()
+{
+
+}
+
+Human::~Human()
+{
+
+}
+*/

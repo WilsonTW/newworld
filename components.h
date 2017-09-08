@@ -276,10 +276,32 @@ public:
     void setFaEnabled(bool faEnabled);
     void setFaQuality(float faQuality);
     void setFaQuantity(float faQuantity);
+    void setAware(float aware);
+
+    void setTargetX(float targetX);
+    void setTargetY(float targetY);
+    void setTargetZ(float targetZ);
+    void setTargetTime(float targetTime);
+
+    void setCurrentX(float currentX);
+    void setCurrentY(float currentY);
+    void setCurrentZ(float currentZ);
+    void setCurrentTime(float currentTime);
 
     bool getFaEnabled();
     float getFaQuality();
     float getFaQuantity();
+    float getAware();
+
+    float getTargetX();
+    float getTargetY();
+    float getTargetZ();
+    float getTargetTime();
+
+    float getCurrentX();
+    float getCurrentY();
+    float getCurrentZ();
+    float getCurrentTime();
 
 public Q_SLOTS:
     void acceptAware(bool enabled, float diversity, float quality, float quantity);
@@ -290,6 +312,9 @@ public Q_SLOTS:
     void acceptTouchFa(bool enabled, float quality, float quantity);
     void acceptThoughtFa(bool enabled, float quality, float quantity);
 
+    void acceptPositionMoving(float x, float y, float z, float speed);
+    void acceptTimeMoving(float time, float speed);
+
 Q_SIGNALS:
     void sendFa(bool enabled, float quality, float quantity);
 
@@ -297,6 +322,26 @@ private:
     bool m_faEnabled;
     float m_faQuality;
     float m_faQuantity;
+    float m_aware;
+
+    float m_target_x;
+    float m_target_y;
+    float m_target_z;
+    float m_target_time;
+
+    float m_current_x;
+    float m_current_y;
+    float m_current_z;
+    float m_current_time;
 };
+/*
+class Human : public QObject
+{
+    Q_OBJECT
+public:
+    Human();
+    ~Human();
+};
+*/
 
 #endif // COMPONENTS_H
